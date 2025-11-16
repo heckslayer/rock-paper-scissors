@@ -8,22 +8,28 @@
 </head>
 <body>
     <div id="scoreMenu">
-        <div id="roundNum">
+        <div id="roundNumCard">
             <p>Round Number:</p>
-            <p>-</p>
+            <p id="roundNum">-</p>
         </div>
         <div id="scoreCard">
-            <div id="humanScore">
+            <div id="humanScoreCard">
                 <p>Human Score:</p>
-                <p>-</p>
+                <p id="humanScore">-</p>
             </div>
-            <div id="computerScore">
+            <div id="computerScoreCard">
                 <p>Computer Score:</p>
-                <p>-</p>
+                <p id="computerScore">-</p>
             </div>
         </div>
     </div>
-    <button>start</button>
+    <button id="startGame">Start</button>
+
+    <form id="choiceMenu">
+        <label for="userChoice">Choice:</label>
+        <input id="userChoice" type="text" required>
+        <input type="submit">
+    </form>
 
     <script src="./static.js"></script>
 </body>
